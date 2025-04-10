@@ -1,0 +1,98 @@
+*{ 
+    box-sizing: border-box;
+    color: rgb(30, 31, 32);
+}
+html, body{
+    margin: 2;
+    padding:0;
+    font-size: 1.1em;
+    background-color: rgb(252, 246, 239);
+}
+.nav ul {
+    margin: 20px;
+}
+.nav li {
+    display: inline;
+}
+.nav a {
+    text-align: center;
+    text-decoration: none;
+    padding:.5em;
+    color: rgb(216, 173, 120);
+}
+.nav a:hover{
+    background-color: rgb(238, 221, 200);
+}
+.main-header{
+    background-image: url("abc.jpg");
+background-size: cover;
+padding-bottom: 40px;
+}
+.para-heading{
+    text-align: center;
+    font-size: 1.7em;
+}
+.name{
+    text-align: center;
+    margin:0;
+    font-size: 2.5em;
+    color:rgb(216, 173, 120) ;
+}
+.name-large{
+    font-size: 5em;
+    color:rgb(216, 173, 120);
+}
+.content-section{
+    margin: 0.5em;
+    padding: .5
+}
+.container{
+    max-width: 900px;
+    margin:0 auto;
+    padding: .5
+    
+}
+.section-header{
+    text-align: center;
+    font-size: 1.5em;
+    color:rgb(216, 173, 120);
+}
+.equipments
+{
+float: inline-end;
+    height: 350px;
+    width: 280px;
+    margin: 15px;
+    border-radius: 10%;
+}
+.brownies{
+        float: right;
+        height: 350px;
+        width: 280px;
+        margin: 15px;
+        border-radius: 10%;
+    
+}
+.main-footer{
+    background-color: antiquewhite;
+    padding: 0 0%;
+}
+.main-footer-container{
+    display:flex;
+    align-items: center;
+}
+.main-footer-container{
+    text-align: end;
+    flex-grow:1em;
+}
+.footer-nav{
+    padding:0 .5em;
+}
+.footer-nav img{
+    width:100px;
+    height:100px;
+}
+.span{
+    color: rgb(211, 160, 98);
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Html video</title>
+<!-- Embedded CSS styling -->
+<style>
+    body {
+            min-height: 100vh; 
+            display: flex;
+            justify-content: center; /* Horizontal centering */
+            align-items: center; /* Vertical centering */
+            background: #e7e5e5;
+        }
+
+        video {
+            max-width: 100%; 
+            max-height: 80vh; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+        }
+</style>
+</head>
+<body>
+    <div class="video-container">
+        <!-- Image source file (jpg format) -->
+        <video controls loop poster="margallahills.jpg">
+        <!-- Video source file (MP4 format) -->
+            <source src="margalla hills.mp4" type="video/mp4">
+            </video>
+    </div>
+</body>
+</html>

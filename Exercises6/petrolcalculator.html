@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PETROL CALCULATOR</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+            .calculator{
+                width: 300px;
+                margin:auto;
+                padding: 10%;
+                border-radius: 50px;      
+                background-color: rgb(214, 213, 212);      
+                box-shadow:0 0 20px rgba(0,0,0,0.5);
+            }
+            label{
+                font-size: 150%;
+            }
+            button{
+                background-color: #0dc29b;
+                color:white;
+                padding: 10px 20px;
+                border: none;
+                border-radius:5px;
+                font-size: large;
+                }
+            button:hover{
+                background-color:#60beac;
+            }
+            #totalCost {
+                width: 90%;
+                margin-top: 3px;
+                padding: 11px;
+                background-color: white;
+                border-radius: 3px;
+                color: #2c3e50;
+                display: flex;
+                justify-content: center;
+            }
+            input[type="number"]
+            {
+                width: 100%;
+                padding: 10px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+        </style>
+        <script>
+            function calculator(){
+                var petrolprice = document.getElementById("petrolprice").value;
+                var liters = document.getElementById("liters").value;
+                var petrolcost = petrolprice * liters;
+                document.getElementById("totalCost").innerText = "Total cost: $" + petrolcost.toFixed(2);
+            } 
+        </script>
+        <div class="calculator">
+            <h1>Petrol Calculator</h1>
+            <hr>
+            <label for = "petrolprice"> Price of petrol per liter</label>
+            <input type = "number" id="petrolprice" value="1.72" placeholder="Enter price of petrol per liter" required>
+            <br><br>
+            <label for = "Liters">Liters of petrol:</label>
+            <input type ="number" id="liters" placeholder="Enter liters of petrol" required>
+            <br><br>
+            <button onclick="calculator(); updateTotalCost(petrolcost)">Calculate</button> 
+            <br><br>
+            <p id="totalCost">Total cost:$0.00</p>
+        </div>
+    </head>
+
+    </html>

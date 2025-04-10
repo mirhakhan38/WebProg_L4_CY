@@ -1,0 +1,29 @@
+.main-heading{
+    text-align: center;
+    color: rgb(211, 164, 164);
+    }
+    .gallery{
+      display: inline-block;
+      border: 7px solid rgb(211, 164, 164);
+      margin: 40px;
+      padding: 5;
+      align-items: left;
+      border-radius: 10%;
+      box-shadow: inset;
+    
+    }
+    .cars{
+      border-radius: 10%;
+    
+    }
+    .gallery .description{
+      padding:10px;
+      text-align: center;
+      font-size: smaller;
+    }
+    .gallery:hover{
+      border: 1px solid hs1(0, 0, 20);
+    }
+    .description{
+      text-align: center;
+    }
